@@ -1,13 +1,42 @@
-angular.module('threebears',['ui-router']);
+angular.module('threebears', ['ui.router'])
 
 
-$(document).ready(function() {
-  $('body').addClass('js');
-  var $menu = $('#menu'),
-    $menulink = $('.menu-link');
 
-$menulink.click(function() {
-  $menulink.toggleClass('active');
-  $menu.toggleClass('active');
-  return false;
-});});
+
+
+
+
+.config( function($stateProvider, $urlRouterProvider) {
+
+   $stateProvider
+
+      .state('home', {
+         url           : '/',
+         templateUrl   : 'js/home/homeView.html',
+         controller    : 'homeCtrl'
+      })
+
+      .state('amenities', {
+         url           : '/amenities',
+         templateUrl   : 'js/amenities/amenitiesView.html',
+         controller    : 'amenitiesCtrl'
+      })
+
+      .state('resort', {
+         url           : '/resort',
+         templateUrl   : 'js/resort/resortView.html',
+         controller    : 'resortCtrl'
+      })
+
+      .state('sandpoint', {
+         url           : '/sandpoint',
+         templateUrl   : 'js/sandpoint/sandpointView.html',
+         controller    : 'sandpointCtrl'
+      });
+
+
+
+   $urlRouterProvider
+      .otherwise('/');
+
+});
