@@ -1,0 +1,329 @@
+/* ----------- Page Setup ----------- */
+body {
+   box-sizing: border-box;
+   background: #C8CDC7;
+}
+
+
+
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+
+/* ----------- Colors ----------- */
+/*#2B4053*/
+/*#C8CDC7*/
+/*#9FB7B7*/
+/*#94968B*/
+
+
+/* ----------- Navigation ----------- */
+
+.navigation-main {
+   background: black;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   height: 50px;
+   text-align: center;
+   padding-top: 10px;
+
+}
+
+
+
+#menu li a {
+   color: white;
+}
+
+
+.text {
+   width: 85%;
+   margin: 0 auto 65px;
+   text-align: center;
+
+}
+
+.logo {
+   height: 30px;
+}
+
+
+
+
+/* ----------- Banner Box ----------- */
+
+.home-banner-box {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    height: 450px;
+    background-image: url('../pictures/resort/pooldeck.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 40%;
+}
+
+.bungalow-banner-box {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    height: 450px;
+    background-image: url('../pictures/bungalow/bungalow.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.cottage-banner-box {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    height: 450px;
+    background-image: url('../pictures/cottage/cottage_front.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 40%;
+}
+
+
+.sandpoint-banner-box {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    height: 450px;
+    background-image: url('../pictures/sandpoint/beach_play.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 5%;
+}
+
+.resort-banner-box {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    height: 450px;
+    background-image: url('../pictures/resort/riverwalk.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 40%;
+}
+
+
+
+
+
+/* ----------- Home View ----------- */
+.home-view {
+   background: white;
+}
+
+.intro {
+   text-align: center;
+}
+
+.banners {
+   width: 100%;
+   height: 250px;
+   margin-top: 50px;
+
+}
+
+#beach {
+   width: 100%;
+}
+
+.navigation-main li {
+   display: inline-block;
+   padding: 3px;
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+   list-style: none outside;
+   text-align: center;
+   display: inline-block;
+}
+
+.home-p {
+   text-align: justify;
+}
+
+
+
+
+
+
+/* ----------- Bungalow View ----------- */
+
+.bungalow-container img {
+   height: 220px;
+}
+
+.bungalow-container table {
+   text-align: center;
+   margin: 0 auto;
+}
+
+.bungalow-container table, tr, td {
+
+    border: 1px solid black;
+}
+
+.bungalow-container td {
+   text-align: left;
+    padding: 10px;
+}
+
+.bungalow-container .tcategory {
+   text-align: center;
+}
+
+#b-description {
+   text-align: justify;
+}
+
+/* ----------- Cottage View ----------- */
+.cottage-container img {
+   height: 250px;
+}
+
+
+.cottage-container table {
+   text-align: center;
+   margin: 0 auto;
+}
+
+.cottage-container table, tr, td {
+
+    border: 1px solid black;
+}
+
+.cottage-container td {
+   text-align: left;
+    padding: 10px;
+}
+
+.cottage-container .tcategory {
+   text-align: center;
+}
+
+#c-description {
+   text-align: justify;
+}
+/* ----------- Resort View ----------- */
+
+.resort p {
+   text-align: justify;
+}
+
+/* ----------- Sandpoint View ----------- */
+.sandpoint p {
+   text-align: justify;
+}
+
+.activities_list {
+   text-align: center;
+}
+
+
+
+
+
+
+/* ----------- Footer ----------- */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #b63737;
+    text-align: center;
+}
+
+.footer h3 {
+   margin-top: 10px;
+}
+
+.booking {
+   color: #2B4053;
+}
+
+h1 {
+   font-size: 24px;
+}
+
+
+@media only screen and (min-width: 600px) {
+   .home-banner-box {
+       height: 500px;
+    }
+
+    .bungalow-banner-box {
+       height: 500px;
+    }
+
+    .cottage-banner-box {
+      height: 500px;
+  }
+
+
+  .sandpoint-banner-box {
+     height: 500px;
+}
+
+.resort-banner-box {
+   height: 500px;
+}
+
+
+
+    .text {
+      width: 75%;
+   }
+
+
+   #menu li{
+      padding: 0 30px;
+   }
+
+
+}
+
+@media only screen and (min-width: 900px) {
+   .home-banner-box {
+       height: 650px;
+    }
+
+    .bungalow-banner-box {
+       height: 650px;
+    }
+
+    .cottage-banner-box {
+      height: 650px;
+  }
+
+
+  .sandpoint-banner-box {
+     height: 650px;
+}
+
+.resort-banner-box {
+   height: 650px;
+}
+
+
+
+    .text {
+      width: 60%;
+   }
+
+
+   #menu li{
+      padding: 0 60px;
+   }
+
+
+}

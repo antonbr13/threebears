@@ -1,0 +1,33 @@
+{
+  "name": "threebears",
+  "description": "Landing Page for Three Bears Rentals",
+  "main": "index.js",
+  "authors": [
+    "Anton Bredl"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Dover",
+    "Idaho",
+    "Vacation",
+    "Rental",
+    "Sandpoint"
+  ],
+  "homepage": "https://github.com/antonbr13/threebears",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^3.0.0",
+    "jasny-bootstrap": "^3.1.3",
+    "jquery-mobile": "^1.4.5"
+  },
+  "resolutions": {
+    "jquery": "^3.0.0"
+  }
+}
